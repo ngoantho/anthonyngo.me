@@ -2,10 +2,8 @@
   <NotionRenderer :blockMap="blockMap" fullPage />
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
+<script lang="js">
+export default {
     data() {
       return {
         blockMap: null 
@@ -19,7 +17,7 @@ export default Vue.extend({
     );
     return { blockMap };
       }
-  })
+  }
 </script>
 
 <style>
