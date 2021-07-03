@@ -1,8 +1,6 @@
 <template>
-  <div id="hex">
-    <div id="inner">
-      <p id="txt">A</p>
-    </div> 
+  <div id="hexagon">
+    <p id="txt">A</p>
   </div>
 </template>
 
@@ -14,61 +12,38 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-#hex {
-  margin-top: 70px;
-  width: 208px;
-  height: 120px;
+$hexagon-border: blue;
+$hexagon-body: yellow;
+$hexagon-size: 50px;
+
+#hexagon {
   position: relative;
-  background: $primary;
-}
-#hex:before, #hex:after {
-  content: "";
-  border-left: 104px solid transparent;
-  border-right: 104px solid transparent;
-  position: absolute;
-}
-#hex:before {
-  top: -60px;
-  border-bottom: 60px solid $primary;
-}
-#hex:after {
-  bottom: -60px;
-  border-top: 60px solid $primary;
-  right: 0px;
-}
+  height: $hexagon-size;
+  width: $hexagon-size;
+  background: $hexagon-border;
+  z-index: 0;
 
-#inner {
-  background: blue;
-  transform: scale(.8, .8);
-  z-index: 1;
-}
-#inner:before, #inner:after {
-  content: "";
-  border-left: 104px solid transparent;
-  border-right: 104px solid transparent;
-  position: absolute;
-}
-#inner:before {
-  top: -60px;
-  border-bottom: 60px solid blue;
-}
-#inner:after {
-  bottom: -60px;
-  border-top: 60px solid blue;
-  right: 0px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-#txt {
-  height: 120px;
-  z-index: 2;
+  #txt {
+      z-index: 1;
+    }
 }
-#txt:after {
-  content: "";
-  border-left: 104px solid transparent;
-  border-right: 104px solid transparent;
+#hexagon:before {
   position: absolute;
-  bottom: -80px;
-  border-top: 60px solid red;
-  z-index: 999;
+  content: '';
+}
+#hexagon:before {
+  top: 4px;  /* border width */
+  left: 4px;  /* border width */
+  height: calc(100% - 8px);  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);  /* 100% - (2 * border width) */
+  background: $hexagon-body;
+}
+#hexagon, #hexagon:before {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 </style>

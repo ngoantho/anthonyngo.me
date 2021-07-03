@@ -6,28 +6,37 @@ specifiers:
   '@nuxtjs/style-resources': ^1.2.0
   buefy: ^0.9.8
   core-js: ^3.15.1
+  cross-fetch: ^3.1.4
   node-fetch: ^2.6.1
   nuxt: ^2.15.7
   nuxt-buefy: ^0.4.8
+  prismjs: ^1.24.1
   sass: ^1.35.1
   sass-loader: '10'
   ufo: ^0.7.7
   vue: ^2.6.14
   vue-client-only: ^2.1.0
+  vue-fragment: ^1.5.2
   vue-meta: ^2.4.0
   vue-no-ssr: ^1.1.1
+  vue-notion: ^0.4.0
+  vue-prism-component: 1.2.0
   vue-router: ^3.5.2
 
 dependencies:
   buefy: 0.9.8_vue@2.6.14
   core-js: 3.15.2
+  cross-fetch: 3.1.4
   nuxt: 2.15.7
   nuxt-buefy: 0.4.8_vue@2.6.14
+  prismjs: 1.24.1
   ufo: 0.7.7
   vue: 2.6.14
   vue-client-only: 2.1.0
+  vue-fragment: 1.5.2_vue@2.6.14
   vue-meta: 2.4.0
   vue-no-ssr: 1.1.1
+  vue-prism-component: 1.2.0
   vue-router: 3.5.2
 
 devDependencies:
@@ -37,6 +46,7 @@ devDependencies:
   node-fetch: 2.6.1
   sass: 1.35.1
   sass-loader: 10.2.0_sass@1.35.1
+  vue-notion: 0.4.0_prismjs@1.24.1+vue@2.6.14
 
 packages:
 
@@ -3127,6 +3137,11 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: false
 
+  /cross-fetch/3.1.4:
+    resolution: {integrity: sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==}
+    dependencies:
+      node-fetch: 2.6.1
+
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
@@ -3429,7 +3444,6 @@ packages:
 
   /defu/3.2.2:
     resolution: {integrity: sha512-8UWj5lNv7HD+kB0e9w77Z7TdQlbUYDVWqITLHNqFIn6khrNHv5WQo38Dcm1f6HeNyZf0U7UbPf6WeZDSdCzGDQ==}
-    dev: false
 
   /defu/4.0.1:
     resolution: {integrity: sha512-lC+G0KvvWRbisQa50+iFelm3/eMmwo4IlBmfASOVlw9MZpHHyQeVsZxc5j23+TQy5ydgEoTVSrWl7ptou1kzJQ==}
@@ -6529,6 +6543,10 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /prismjs/1.24.1:
+    resolution: {integrity: sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==}
+    dev: false
+
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
@@ -7978,6 +7996,13 @@ packages:
     resolution: {integrity: sha512-vKl1skEKn8EK9f8P2ZzhRnuaRHLHrlt1sbRmazlvsx6EiC3A8oWF8YCBrMJzoN+W3OnElwIGbVjsx6/xelY1AA==}
     dev: false
 
+  /vue-fragment/1.5.2_vue@2.6.14:
+    resolution: {integrity: sha512-KEW0gkeNOLJjtXN4jqJhTazez5jtrwimHkE5Few/VxblH4F9EcvJiEsahrV5kg5uKd5U8du4ORKS6QjGE0piYA==}
+    peerDependencies:
+      vue: ^2.5.16
+    dependencies:
+      vue: 2.6.14
+
   /vue-hot-reload-api/2.3.4:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
     dev: false
@@ -8015,6 +8040,24 @@ packages:
   /vue-no-ssr/1.1.1:
     resolution: {integrity: sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==}
     dev: false
+
+  /vue-notion/0.4.0_prismjs@1.24.1+vue@2.6.14:
+    resolution: {integrity: sha512-aFa2ipFL9RvlKynfBmGdl+7SRJgd0/++NJKuKT3eJ5uzrPy30RVsjtI4nx6ToSt0Yoa4OZpz50zYTrc+IZkxpA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      prismjs: ^1.22.0
+      vue: ^2.6.11
+    dependencies:
+      cross-fetch: 3.1.4
+      defu: 3.2.2
+      prismjs: 1.24.1
+      vue: 2.6.14
+      vue-fragment: 1.5.2_vue@2.6.14
+      vue-prism-component: 1.2.0
+    dev: true
+
+  /vue-prism-component/1.2.0:
+    resolution: {integrity: sha512-0N9CNuQu+36CJpdsZHrhdq7d18oBvjVMjawyKdIr8xuzFWLfdxECZQYbFaYoopPBg3SvkEEMtkhYqdgTQl5Y+A==}
 
   /vue-router/3.5.2:
     resolution: {integrity: sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ==}
