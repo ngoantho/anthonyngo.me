@@ -1,12 +1,14 @@
 <template>
   <fragment>
-    <b-navbar-item tag="router-link" :to="{ path: '/' }">About</b-navbar-item>
-    <b-navbar-item tag="router-link" :to="{ path: '/work' }">Work</b-navbar-item>
+    <b-navbar-item tag="router-link" :to="{ path: '/career' }">Career</b-navbar-item>
+    <b-navbar-item tag="router-link" :to="{ path: '/projects' }">Projects</b-navbar-item>
     <b-navbar-item tag="router-link" :to="{ path: '/experience' }">Experience</b-navbar-item>
-    <b-navbar-dropdown label="More">
-      <b-navbar-item><!-- Garden --></b-navbar-item>
-      <b-navbar-item><!-- Blog --></b-navbar-item>
-    </b-navbar-dropdown>
+    <b-navbar-item tag="a">
+      <a href="//wiki.anthonyngo.me" target="blank">Garden</a>
+    </b-navbar-item>
+    <b-navbar-item tag="a">
+      <a href="//blog.anthonyngo.me" target="blank">Blog</a>
+    </b-navbar-item>
     <b-navbar-item tag="div">
       <div class="buttons">
         <a class="button" outlined>Resume</a>

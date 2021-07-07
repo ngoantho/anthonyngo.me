@@ -12,8 +12,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-$hexagon-border: blue;
-$hexagon-body: yellow;
+$hexagon-border: black;
+$hexagon-body: white;
 $hexagon-size: 50px;
 
 #hexagon {

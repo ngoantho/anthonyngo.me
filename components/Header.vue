@@ -19,5 +19,8 @@ import Vue from "vue"
 export default Vue.extend({})
 </script>
 
-<style>
+<style scoped>
+.container {
+  max-width: 708px;
+}
 </style>
