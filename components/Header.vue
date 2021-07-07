@@ -9,9 +9,9 @@
         </b-navbar-item>
       </template>
       <template #end>
-        <b-navbar-item>
+        <!--<b-navbar-item>
           <NuxtLink to="/career">Career</NuxtLink>
-        </b-navbar-item>
+        </b-navbar-item> -->
         <b-navbar-item>
           <NuxtLink to="/projects">Projects</NuxtLink>
         </b-navbar-item>
