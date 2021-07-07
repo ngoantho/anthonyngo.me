@@ -2,8 +2,10 @@
   <div class="container">
     <b-navbar> 
       <template #brand>
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <BrandIcon/>
+        <b-navbar-item>
+          <NuxtLink to="/">
+            <BrandIcon/>
+          </NuxtLink>
         </b-navbar-item>
       </template>
       <template #end>

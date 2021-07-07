@@ -1,8 +1,14 @@
 <template>
   <fragment>
-    <b-navbar-item tag="router-link" :to="{ path: '/career' }">Career</b-navbar-item>
-    <b-navbar-item tag="router-link" :to="{ path: '/projects' }">Projects</b-navbar-item>
-    <b-navbar-item tag="router-link" :to="{ path: '/experience' }">Experience</b-navbar-item>
+    <b-navbar-item>
+      <NuxtLink to="/career">Career</NuxtLink>
+    </b-navbar-item>
+    <b-navbar-item>
+      <NuxtLink to="/projects">Projects</NuxtLink>
+    </b-navbar-item>
+    <b-navbar-item>
+      <NuxtLink to="/experience">Experience</NuxtLink>
+    </b-navbar-item>
     <b-navbar-item tag="a">
       <a href="//wiki.anthonyngo.me" target="blank">Garden</a>
     </b-navbar-item>
