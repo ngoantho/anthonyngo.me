@@ -18,11 +18,14 @@
         <b-navbar-item>
           <NuxtLink to="/experience">Experience</NuxtLink>
         </b-navbar-item>
-        <b-navbar-item tag="a">
-          <a href="//wiki.anthonyngo.me" target="blank">Garden</a>
+        <b-navbar-item>
+          <NuxtLink to="/book-notes">Book Notes</NuxtLink>
         </b-navbar-item>
         <b-navbar-item tag="a">
-          <a href="//blog.anthonyngo.me" target="blank">Blog</a>
+          <a href="//wiki.anthonyngo.me" target="blank">Garden↗</a>
+        </b-navbar-item>
+        <b-navbar-item tag="a">
+          <a href="//blog.anthonyngo.me" target="blank">Blog↗</a>
         </b-navbar-item>
         <b-navbar-item tag="div">
           <div class="buttons">

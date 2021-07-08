@@ -29,6 +29,7 @@ $hexagon-size: 50px;
 
   #txt {
       z-index: 1;
+      color: black;
     }
 }
 #hexagon:before {
