@@ -4,7 +4,7 @@
     <div class="container">
       <h2 class="notion-h2">
         <span>
-          <span>My Articles</span>
+          <span>Latest Articles</span>
         </span>
       </h2>
       <hr class="notion-hr"/>
